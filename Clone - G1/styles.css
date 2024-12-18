@@ -1,0 +1,161 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-geral {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-geral nav ul, .header-sub nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-geral nav ul li, .header-sub nav ul li{
+    margin-left: 20px;
+}
+
+.header-geral nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.header-geral nav ul li #globo_com{
+    color: rgb(0, 89, 255);
+}
+
+.header-geral nav ul li #g1{
+    color: rgb(211, 0, 0);
+}
+
+.header-geral nav ul li #ge{
+    color: rgb(0, 218, 83);
+}
+
+.header-geral nav ul li #gshow{
+    color: rgb(235, 141, 34);
+}
+
+.header-geral nav ul li #globoplay{
+    color: rgb(255, 49, 49);
+}
+
+.header-sub {
+    background-color: #c4170c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-sub img{
+    width: 3%;
+}
+
+.header-sub .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 130px;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 20px;
+}
+
+.buscador input {
+    padding: 5px 10px;
+    border: 1px solid #a3140b;
+    background-color: #a3140b;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100px;
+    transition: border-color 0.3s ease;
+}
+
+.buscador input::placeholder{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.buscador input:focus {
+    color: #ffffff;
+    border-color: #680902;
+    outline: none;
+}
+
+.banner {
+    background-image: url('images/Capa_principal.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+.cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cartao {
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.cartao:hover {
+    transform: translateY(-10px);
+}
+
+.cartao img {
+    width: 100%;
+    max-height: 160px;
+}
+
+.cartao h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.cartao p {
+    font-size: 1em;
+    padding: 0 15px 15px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    position: static;
+}
